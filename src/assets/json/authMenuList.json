@@ -1,0 +1,336 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/home/index",
+      "name": "home",
+      "component": "/home/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "首页",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/dataScreen",
+      "name": "dataScreen",
+      "component": "/dataScreen/index",
+      "meta": {
+        "icon": "Histogram",
+        "title": "数据大屏",
+        "isLink": "",
+        "isHide": false,
+        "isFull": true,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/deviceManagement",
+      "name": "deviceManagement",
+      "redirect": "/deviceManagement/universalPhysicalModel",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "设备管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/deviceManagement/universalPhysicalModel",
+          "name": "universalPhysicalModel",
+          "component": "/deviceManagement/universalPhysicalModel/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "通用物模型",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/deviceManagement/productClassification",
+          "name": "productClassification",
+          "component": "/deviceManagement/productClassification/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "产品分类",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/deviceManagement/productManagement",
+          "name": "productManagement",
+          "component": "/deviceManagement/productManagement/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "产品管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/deviceManagement/equipmentGrouping",
+          "name": "equipmentGrouping",
+          "component": "/deviceManagement/equipmentGrouping/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "产品分组",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/deviceManagement/deviceManagementItem",
+          "name": "deviceManagementItem",
+          "component": "/deviceManagement/deviceManagementItem/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "设备管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/operationManagement",
+      "name": "operationManagement",
+      "redirect": "/operationManagement/protocolManagement",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "运维管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/operationManagement/protocolManagement",
+          "name": "protocolManagement",
+          "component": "/operationManagement/protocolManagement/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "协议管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/collectionPointTemplate",
+          "name": "collectionPointTemplate",
+          "component": "/operationManagement/collectionPointTemplate/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "协议点模板",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/deviceSimulation",
+          "name": "deviceSimulation",
+          "component": "/operationManagement/deviceSimulation/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "设备模拟",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/productFirmware",
+          "name": "productFirmware",
+          "component": "/operationManagement/productFirmware/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "产品固件",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/notificationChannels",
+          "name": "notificationChannels",
+          "component": "/operationManagement/notificationChannels/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "通知渠道",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/notificationTemplate",
+          "name": "notificationTemplate",
+          "component": "/operationManagement/notificationTemplate/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "通知模板",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/operationManagement/notificationLog",
+          "name": "notificationLog",
+          "component": "/operationManagement/notificationLog/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "通知日志",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/cloudToCloudDocking",
+      "name": "cloudToCloudDocking",
+      "redirect": "/cloudToCloudDocking/audioConfiguration",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "云云对接",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/cloudToCloudDocking/audioConfiguration",
+          "name": "audioConfiguration",
+          "component": "/cloudToCloudDocking/audioConfiguration/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "音响配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/cloudToCloudDocking/xiaoduAudio",
+          "name": "xiaoduAudio",
+          "component": "/cloudToCloudDocking/xiaoduAudio/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "小度音响",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/videoCenter",
+      "name": "videoCenter",
+      "redirect": "/videoCenter/splitScreenDisplay",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "视频中心",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/videoCenter/splitScreenDisplay",
+          "name": "splitScreenDisplay",
+          "component": "/videoCenter/splitScreenDisplay/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "分屏显示",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/videoCenter/channelManagement",
+          "name": "channelManagement",
+          "component": "/videoCenter/channelManagement/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "通道管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/videoCenter/videoConfiguration",
+          "name": "videoConfiguration",
+          "component": "/videoCenter/videoConfiguration/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "视频配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    }
+  ],
+  "msg": "成功"
+}
