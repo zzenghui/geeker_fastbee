@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useProduction } from "@/stores/modules/production"
 let productName = ref<string>("");
 let cateName = ref<string>("");
 let state = ref<string>("");
 let current_page = ref<number>(1);
 let page_size = ref<number>(10);
+const prodStore = useProduction()
+//获取产品数据
+prodStore.getProductionAct()
+
 </script>
 
 <template>
@@ -54,29 +59,30 @@ let page_size = ref<number>(10);
     <!-- 主体区域 -->
     <el-card style="margin-top: 10px">
       <el-row :gutter="20">
-        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24" v-for="item in 10" :key="item">
+        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24"
+          v-for="item in prodStore.productiondata.productionList" :key="item.code">
           <el-card body-style="height:230px" style="margin-bottom: 20px; border-radius: 20px" shadow="hover">
             <div class="header_title">
               <div class="left_title">
                 <el-icon>
                   <Menu />
                 </el-icon>&nbsp;
-                <h3>⭐智能开关产品</h3>
+                <h3>{{ item.title }}</h3>
                 &nbsp;
                 <el-tag type="info">系统</el-tag>
               </div>
               <div class="right_title">
-                <el-tag type="success" v-if="item % 2 == 0">已发布</el-tag>
+                <el-tag type="success" v-if="item.isPublic == 1">已发布</el-tag>
                 <el-tag type="info" v-else>未发布</el-tag>
               </div>
             </div>
             <div class="main_body">
               <div class="left_body">
                 <div class="line2">
-                  <div class="Info">所属类型：<span>电工照明</span></div>
-                  <div class="info">编号：15456489465456154654685</div>
-                  <div class="info">产品：★视频监控产品</div>
-                  <div class="info">激活时间：2024-01-1</div>
+                  <div class="Info">所属类型：<span style="color:cornflowerblue">{{ item.cate }}</span></div>
+                  <div class="info">编号：{{ item.code }}</div>
+                  <div class="info">产品：{{ item.productionName }}</div>
+                  <div class="info">激活时间：{{ item.activeTime }}</div>
                 </div>
               </div>
               <div class="right_body">
@@ -84,8 +90,8 @@ let page_size = ref<number>(10);
               </div>
             </div>
             <div class="footer_operation">
-              <el-button type="primary" icon="View">查看</el-button>
-              <el-button type="success" icon="Odometer">运行状态</el-button>
+              <el-button type="primary" icon="View">详情</el-button>
+              <el-button type="success" icon="Odometer">查看设备</el-button>
             </div>
           </el-card>
         </el-col>

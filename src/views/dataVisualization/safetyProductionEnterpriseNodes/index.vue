@@ -20,17 +20,17 @@
         <div class="dataScreen-lf">
           <div class="dataScreen-top">
             <div class="dataScreen-main-title">
-              <span>实时游客统计</span>
+              <span>设备总览</span>
               <img src="./images/dataScreen-title.png" alt="" />
             </div>
             <!-- chart区域 -->
             <div class="dataScreen-main-chart">
-              <RealTimeAccessChart ref="RealTimeAccessRef" />
+              <equipmentOverview ref="RealTimeAccessRef" />
             </div>
           </div>
           <div class="dataScreen-center">
             <div class="dataScreen-main-title">
-              <span>男女比例</span>
+              <span>Mqtt统计</span>
               <img src="./images/dataScreen-title.png" alt="" />
             </div>
             <!-- chart区域 -->
@@ -130,7 +130,7 @@ import HotPlateChart from "./components/HotPlateChart.vue";
 import MaleFemaleRatioChart from "./components/MaleFemaleRatioChart.vue";
 import OverNext30Chart from "./components/OverNext30Chart.vue";
 import PlatformSourceChart from "./components/PlatformSourceChart.vue";
-import RealTimeAccessChart from "./components/RealTimeAccessChart.vue";
+import equipmentOverview from "./components/equipmentOverview.vue";
 
 const router = useRouter();
 const dataScreenRef = ref<HTMLElement | null>(null);
@@ -362,10 +362,20 @@ let mapData = [
   }
 ];
 
+//左一数据大屏格式
+var Sdata = [
+  { value: 12, name: '设备总数' },
+  { value: 12, name: '在线设备' },
+  { value: 9, name: '离线设备' },
+  { value: 99, name: '告警数量' }
+]
+//左二数据大屏格式
+var leftTwo = [100, 200, 300, 400, 500]
+
 // 初始化 echarts
 const initCharts = (): void => {
-  dataScreen.chart1 = RealTimeAccessRef.value?.initChart(0.5) as ECharts;
-  dataScreen.chart2 = AgeRatioRef.value?.initChart(ageData) as ECharts;
+  dataScreen.chart1 = RealTimeAccessRef.value?.initChart(Sdata) as ECharts;
+  dataScreen.chart2 = AgeRatioRef.value?.initChart(leftTwo) as ECharts;
   dataScreen.chart3 = AnnualUseRef.value?.initChart({
     data: annualData,
     unit: annualData.map(val => val.label),

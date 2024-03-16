@@ -8,7 +8,6 @@ onMounted(() => {
     option = {
         title: {
             text: "内存使用情况",
-            top: '4%',
             x: 'center',
             textStyle: {
                 color: "#808080",

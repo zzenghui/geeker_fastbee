@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useDeviceStore } from "@/stores/modules/device"
 import { ref } from "vue";
 let deviceName = ref<string>("");
 let deviceCode = ref<string>("");
@@ -6,6 +7,11 @@ let deviceState = ref<string>("");
 let myGroup = ref<string>("");
 let current_page = ref<number>(1);
 let page_size = ref<number>(10);
+//结构device仓库
+const deviceStore = useDeviceStore()
+//获取全部设备
+deviceStore.getDeviceList()
+
 </script>
 
 <template>
@@ -66,29 +72,34 @@ let page_size = ref<number>(10);
     <!-- 主体区域 -->
     <el-card style="margin-top: 10px">
       <el-row :gutter="20">
-        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24" v-for="item in 10" :key="item">
+        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24" v-for="item in deviceStore.deviceData.deviceList"
+          :key="item.code">
           <el-card body-style="height:230px" style="margin-bottom: 20px; border-radius: 20px" shadow="hover">
             <div class="header_title">
               <div class="left_title">
-                <el-icon> <Menu /> </el-icon>&nbsp;
-                <h3>监控演示</h3>
+                <el-icon>
+                  <Menu />
+                </el-icon>&nbsp;
+                <h3>{{ item.title }}</h3>
               </div>
               <div class="right_title">
                 <img src="@/assets/images/erweima.svg" alt="" style="width: 25px; height: 25px" />
-                <img src="@/assets/images/wifi.svg" alt="" />
+                <img src="@/assets/images/wifi_active.svg" alt="" v-if="item.state == 1" />
+                <img src="@/assets/images/wifi.svg" alt="" v-else />
               </div>
             </div>
             <div class="main_body">
               <div class="left_body">
                 <div class="line1">
-                  <el-tag type="success">在线</el-tag>
-                  <el-tag type="info">离线</el-tag>
-                  <el-tag type="primary">KUHYT88</el-tag>
+                  <el-tag type="success" v-if="item.state == 1">在线</el-tag>
+                  <el-tag type="info" v-else-if="item.state == 0">离线</el-tag>
+                  <el-tag type="info" v-else>未激活</el-tag>
+                  <el-tag type="primary" v-for="item2 in item.tags" :key="item2">{{ item2 }}</el-tag>
                 </div>
                 <div class="line2">
-                  <div class="info">编号：15456489465456154654685</div>
-                  <div class="info">产品：★视频监控产品</div>
-                  <div class="info">激活时间：2024-01-1</div>
+                  <div class="info">编号：{{ item.code }}</div>
+                  <div class="info">产品：{{ item.productName }}</div>
+                  <div class="info">激活时间：{{ item.activationTime }}</div>
                 </div>
               </div>
               <div class="right_body">
@@ -103,14 +114,8 @@ let page_size = ref<number>(10);
         </el-col>
       </el-row>
       <!-- 分页区域 -->
-      <el-pagination
-        v-model:current-page="current_page"
-        v-model:page-size="page_size"
-        :page-sizes="[10, 15, 20, 25]"
-        :background="true"
-        layout="total, sizes, prev, pager, next, jumper"
-        :total="400"
-      />
+      <el-pagination v-model:current-page="current_page" v-model:page-size="page_size" :page-sizes="[10, 15, 20, 25]"
+        :background="true" layout="total, sizes, prev, pager, next, jumper" :total="deviceStore.deviceData.total" />
     </el-card>
   </div>
 </template>
