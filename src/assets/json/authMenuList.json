@@ -16,25 +16,11 @@
       }
     },
     {
-      "path": "/dataScreen",
-      "name": "dataScreen",
-      "component": "/dataScreen/index",
-      "meta": {
-        "icon": "Histogram",
-        "title": "数据大屏",
-        "isLink": "",
-        "isHide": false,
-        "isFull": true,
-        "isAffix": false,
-        "isKeepAlive": true
-      }
-    },
-    {
       "path": "/deviceManagement",
       "name": "deviceManagement",
       "redirect": "/deviceManagement/universalPhysicalModel",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Compass",
         "title": "设备管理",
         "isLink": "",
         "isHide": false,
@@ -48,7 +34,7 @@
           "name": "universalPhysicalModel",
           "component": "/deviceManagement/universalPhysicalModel/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "CircleCheck",
             "title": "通用物模型",
             "isLink": "",
             "isHide": false,
@@ -62,7 +48,7 @@
           "name": "productClassification",
           "component": "/deviceManagement/productClassification/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Message",
             "title": "产品分类",
             "isLink": "",
             "isHide": false,
@@ -76,7 +62,7 @@
           "name": "productManagement",
           "component": "/deviceManagement/productManagement/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Remove",
             "title": "产品管理",
             "isLink": "",
             "isHide": false,
@@ -90,7 +76,7 @@
           "name": "equipmentGrouping",
           "component": "/deviceManagement/equipmentGrouping/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "DataBoard",
             "title": "产品分组",
             "isLink": "",
             "isHide": false,
@@ -104,7 +90,7 @@
           "name": "deviceManagementItem",
           "component": "/deviceManagement/deviceManagementItem/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "DataLine",
             "title": "设备管理",
             "isLink": "",
             "isHide": false,
@@ -120,7 +106,7 @@
       "name": "operationManagement",
       "redirect": "/operationManagement/protocolManagement",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "FolderOpened",
         "title": "运维管理",
         "isLink": "",
         "isHide": false,
@@ -134,7 +120,7 @@
           "name": "protocolManagement",
           "component": "/operationManagement/protocolManagement/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "DataAnalysis",
             "title": "协议管理",
             "isLink": "",
             "isHide": false,
@@ -148,7 +134,7 @@
           "name": "collectionPointTemplate",
           "component": "/operationManagement/collectionPointTemplate/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Collection",
             "title": "协议点模板",
             "isLink": "",
             "isHide": false,
@@ -162,7 +148,7 @@
           "name": "deviceSimulation",
           "component": "/operationManagement/deviceSimulation/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Memo",
             "title": "设备模拟",
             "isLink": "",
             "isHide": false,
@@ -176,7 +162,7 @@
           "name": "productFirmware",
           "component": "/operationManagement/productFirmware/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Tickets",
             "title": "产品固件",
             "isLink": "",
             "isHide": false,
@@ -190,7 +176,7 @@
           "name": "notificationChannels",
           "component": "/operationManagement/notificationChannels/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Notebook",
             "title": "通知渠道",
             "isLink": "",
             "isHide": false,
@@ -204,7 +190,7 @@
           "name": "notificationTemplate",
           "component": "/operationManagement/notificationTemplate/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Document",
             "title": "通知模板",
             "isLink": "",
             "isHide": false,
@@ -218,7 +204,7 @@
           "name": "notificationLog",
           "component": "/operationManagement/notificationLog/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "DocumentAdd",
             "title": "通知日志",
             "isLink": "",
             "isHide": false,
@@ -234,7 +220,7 @@
       "name": "cloudToCloudDocking",
       "redirect": "/cloudToCloudDocking/audioConfiguration",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Reading",
         "title": "云云对接",
         "isLink": "",
         "isHide": false,
@@ -248,7 +234,7 @@
           "name": "audioConfiguration",
           "component": "/cloudToCloudDocking/audioConfiguration/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "TrendCharts",
             "title": "音响配置",
             "isLink": "",
             "isHide": false,
@@ -262,7 +248,7 @@
           "name": "xiaoduAudio",
           "component": "/cloudToCloudDocking/xiaoduAudio/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "FirstAidKit",
             "title": "小度音响",
             "isLink": "",
             "isHide": false,
@@ -278,7 +264,7 @@
       "name": "videoCenter",
       "redirect": "/videoCenter/splitScreenDisplay",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Ticket",
         "title": "视频中心",
         "isLink": "",
         "isHide": false,
@@ -292,7 +278,7 @@
           "name": "splitScreenDisplay",
           "component": "/videoCenter/splitScreenDisplay/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "ScaleToOriginal",
             "title": "分屏显示",
             "isLink": "",
             "isHide": false,
@@ -306,7 +292,7 @@
           "name": "channelManagement",
           "component": "/videoCenter/channelManagement/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "DocumentAdd",
             "title": "通道管理",
             "isLink": "",
             "isHide": false,
@@ -320,8 +306,598 @@
           "name": "videoConfiguration",
           "component": "/videoCenter/videoConfiguration/index",
           "meta": {
-            "icon": "Menu",
+            "icon": "Postcard",
             "title": "视频配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/dataVisualization",
+      "name": "dataVisualization",
+      "redirect": "/dataVisualization/largeScreenManagement",
+      "meta": {
+        "icon": "VideoCamera",
+        "title": "数据可视化",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/dataVisualization/largeScreenManagement",
+          "name": "largeScreenManagement",
+          "component": "/dataVisualization/largeScreenManagement/index",
+          "meta": {
+            "icon": "VideoPlay",
+            "title": "大屏管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": true,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/dataVisualization/safetyProductionEnterpriseNodes",
+          "name": "safetyProductionEnterpriseNodes",
+          "component": "/dataVisualization/safetyProductionEnterpriseNodes/index",
+          "meta": {
+            "icon": "Mic",
+            "title": "安全生产企业节点",
+            "isLink": "",
+            "isHide": false,
+            "isFull": true,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/dataVisualization/bigDataVisualizationPlatform",
+          "name": "bigDataVisualizationPlatform",
+          "component": "/dataVisualization/bigDataVisualizationPlatform/index",
+          "meta": {
+            "icon": "Monitor",
+            "title": "大数据可视化平台",
+            "isLink": "",
+            "isHide": false,
+            "isFull": true,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/ruleEngine",
+      "name": "ruleEngine",
+      "redirect": "/ruleEngine/ruleScript",
+      "meta": {
+        "icon": "IceCreamRound",
+        "title": "规则引擎",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/ruleEngine/ruleScript",
+          "name": "ruleScript",
+          "component": "/ruleEngine/ruleScript/index",
+          "meta": {
+            "icon": "Paperclip",
+            "title": "规则脚本",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/ruleEngine/alarmConfiguration",
+          "name": "alarmConfiguration",
+          "component": "/ruleEngine/alarmConfiguration/index",
+          "meta": {
+            "icon": "Mouse",
+            "title": "告警配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/ruleEngine/alarmLog",
+          "name": "alarmLog",
+          "component": "/ruleEngine/alarmLog/index",
+          "meta": {
+            "icon": "Present",
+            "title": "告警记录",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/systemManagement",
+      "name": "systemManagement",
+      "redirect": "/systemManagement/userManagement",
+      "meta": {
+        "icon": "Brush",
+        "title": "系统管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/systemManagement/userManagement",
+          "name": "userManagement",
+          "component": "/systemManagement/userManagement/index",
+          "meta": {
+            "icon": "CreditCard",
+            "title": "用户管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/roleManagement",
+          "name": "roleManagement",
+          "component": "/systemManagement/roleManagement/index",
+          "meta": {
+            "icon": "Printer",
+            "title": "角色管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/menuManagement",
+          "name": "menuManagement",
+          "component": "/systemManagement/menuManagement/index",
+          "meta": {
+            "icon": "GoldMedal",
+            "title": "菜单管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/departmentManagement",
+          "name": "departmentManagement",
+          "component": "/systemManagement/departmentManagement/index",
+          "meta": {
+            "icon": "ShoppingTrolley",
+            "title": "部门管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/jobManagement",
+          "name": "jobManagement",
+          "component": "/systemManagement/jobManagement/index",
+          "meta": {
+            "icon": "Money",
+            "title": "岗位管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/dictionaryManagement",
+          "name": "dictionaryManagement",
+          "component": "/systemManagement/dictionaryManagement/index",
+          "meta": {
+            "icon": "Basketball",
+            "title": "字典管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/parameterSettings",
+          "name": "parameterSettings",
+          "component": "/systemManagement/parameterSettings/index",
+          "meta": {
+            "icon": "AlarmClock",
+            "title": "参数设置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/notificationAnnouncement",
+          "name": "notificationAnnouncement",
+          "component": "/systemManagement/notificationAnnouncement/index",
+          "meta": {
+            "icon": "SuitcaseLine",
+            "title": "通知公告",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/logManagement",
+          "name": "logManagement",
+          "redirect": "/systemManagement/logManagement",
+          "meta": {
+            "icon": "Refrigerator",
+            "title": "日志管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/systemManagement/logManagement/operationLog",
+              "name": "logManagement",
+              "component": "/systemManagement/logManagement/operationLog/index",
+              "meta": {
+                "icon": "Cpu",
+                "title": "操作日志",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/systemManagement/logManagement/loginLog",
+              "name": "loginLog",
+              "component": "/systemManagement/logManagement/loginLog/index",
+              "meta": {
+                "icon": "TakeawayBox",
+                "title": "登录日志",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/systemManagement/newsClassification",
+          "name": "newsClassification",
+          "component": "/systemManagement/newsClassification/index",
+          "meta": {
+            "icon": "Stopwatch",
+            "title": "新闻分类",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/newsAndInformation",
+          "name": "newsAndInformation",
+          "component": "/systemManagement/newsAndInformation/index",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "新闻咨询",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemManagement/tripartiteRecords",
+          "name": "tripartiteRecords",
+          "component": "/systemManagement/tripartiteRecords/index",
+          "meta": {
+            "icon": "VideoPlay",
+            "title": "三方记录",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/systemMonitoring",
+      "name": "systemMonitoring",
+      "redirect": "/systemMonitoring/onlineUsers",
+      "meta": {
+        "icon": "DocumentDelete",
+        "title": "系统监控",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/systemMonitoring/onlineUsers",
+          "name": "onlineUsers",
+          "component": "/systemMonitoring/onlineUsers/index",
+          "meta": {
+            "icon": "DocumentRemove",
+            "title": "在线用户",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemMonitoring/timedTasks",
+          "name": "timedTasks",
+          "component": "/systemMonitoring/timedTasks/index",
+          "meta": {
+            "icon": "Fold",
+            "title": "定时任务",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemMonitoring/dataMonitoring",
+          "name": "dataMonitoring",
+          "component": "/systemMonitoring/dataMonitoring/index",
+          "meta": {
+            "icon": "Expand",
+            "title": "数据监测",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemMonitoring/serviceMonitoring",
+          "name": "serviceMonitoring",
+          "component": "/systemMonitoring/serviceMonitoring/index",
+          "meta": {
+            "icon": "StarFilled",
+            "title": "服务监控",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemMonitoring/cacheMonitoring",
+          "name": "cacheMonitoring",
+          "component": "/systemMonitoring/cacheMonitoring/index",
+          "meta": {
+            "icon": "HelpFilled",
+            "title": "缓存监控",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/nettyManagement",
+      "name": "nettyManagement",
+      "redirect": "/nettyManagement/client",
+      "meta": {
+        "icon": "QuestionFilled",
+        "title": "Netty管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/nettyManagement/client",
+          "name": "client",
+          "component": "/nettyManagement/client/index",
+          "meta": {
+            "icon": "Operation",
+            "title": "客户端",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/systemTools",
+      "name": "systemTools",
+      "redirect": "/systemTools/formConstruction",
+      "meta": {
+        "icon": "EditPen",
+        "title": "系统工具",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/systemTools/formConstruction",
+          "name": "formConstruction",
+          "component": "/systemTools/formConstruction/index",
+          "meta": {
+            "icon": "Warning",
+            "title": "系统构建",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemTools/codeGeneration",
+          "name": "codeGeneration",
+          "component": "/systemTools/codeGeneration/index",
+          "meta": {
+            "icon": "CircleCheck",
+            "title": "代码生成",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/systemTools/systemInterface",
+          "name": "systemInterface",
+          "component": "/systemTools/systemInterface/index",
+          "meta": {
+            "icon": "Service",
+            "title": "系统接口",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/configurationManagement",
+      "name": "configurationManagement",
+      "redirect": "/configurationManagement/configurationCenter",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "组态管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/configurationManagement/configurationCenter",
+          "name": "configurationCenter",
+          "component": "/configurationManagement/configurationCenter/index",
+          "meta": {
+            "icon": "ChatDotSquare",
+            "title": "组态中心",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/configurationManagement/iconManagement",
+          "name": "iconManagement",
+          "component": "/configurationManagement/iconManagement/index",
+          "meta": {
+            "icon": "Odometer",
+            "title": "图标管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/configurationManagement/libraryManagement",
+          "name": "libraryManagement",
+          "component": "/configurationManagement/libraryManagement/index",
+          "meta": {
+            "icon": "ChatLineSquare",
+            "title": "图库管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/configurationManagement/componentManagement",
+          "name": "componentManagement",
+          "component": "/configurationManagement/componentManagement/index",
+          "meta": {
+            "icon": "Position",
+            "title": "组件管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/configurationManagement/modelManagement",
+          "name": "modelManagement",
+          "component": "/configurationManagement/modelManagement/index",
+          "meta": {
+            "icon": "CirclePlus",
+            "title": "模型管理",
             "isLink": "",
             "isHide": false,
             "isFull": false,
