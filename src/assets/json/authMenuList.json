@@ -346,9 +346,9 @@
           }
         },
         {
-          "path": "/dataVisualization/safetyProductionEnterpriseNodes",
-          "name": "safetyProductionEnterpriseNodes",
-          "component": "/dataVisualization/safetyProductionEnterpriseNodes/index",
+          "path": "/dataVisualization/visualizing",
+          "name": "visualizing",
+          "component": "/dataVisualization/visualizing/index",
           "meta": {
             "icon": "Mic",
             "title": "安全生产企业节点",
