@@ -8,5 +8,12 @@ export interface deviceInfo {
     img:string;
     activationTime:string;
     qrCode:string;
-    isWifiActive:number
+}
+
+//搜索设备请求参数
+export interface searchDeviceParams {
+    deviceName:string
+    deviceCode:string
+    deviceState:number
+    myGroup:string
 }

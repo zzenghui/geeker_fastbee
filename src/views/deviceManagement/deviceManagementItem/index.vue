@@ -1,16 +1,33 @@
 <script setup lang="ts">
 import { useDeviceStore } from "@/stores/modules/device"
+import { getPicture } from "@/utils/getRandom"
 import { ref } from "vue";
-let deviceName = ref<string>("");
-let deviceCode = ref<string>("");
-let deviceState = ref<string>("");
-let myGroup = ref<string>("");
 let current_page = ref<number>(1);
 let page_size = ref<number>(10);
 //结构device仓库
 const deviceStore = useDeviceStore()
 //获取全部设备
 deviceStore.getDeviceList()
+
+
+//------------------------------------------------搜索设备start
+let deviceName = ref<string>("");
+let deviceCode = ref<string>("");
+let deviceState = ref<number>(0);
+let myGroup = ref<string>("");
+function searchDevice() {
+  let reqParams = {
+    deviceName: deviceName.value,
+    deviceCode: deviceCode.value,
+    deviceState: deviceState.value,
+    myGroup: myGroup.value
+  }
+  console.log(reqParams);
+
+  deviceStore.searchDevice(reqParams)
+}
+//------------------------------------------------搜索设备end
+
 
 </script>
 
@@ -37,10 +54,10 @@ deviceStore.getDeviceList()
               <div class="deviceState selectItem">
                 <span>设备状态</span>
                 <el-select v-model="deviceState" style="width: 150px" placeholder="请选择设备状态">
-                  <el-option label="未激活" value="1"></el-option>
-                  <el-option label="禁用" value="2"></el-option>
-                  <el-option label="离线" value="3"></el-option>
-                  <el-option label="在线" value="4"></el-option>
+                  <el-option label="未激活" :value="2"></el-option>
+                  <el-option label="禁用" :value="3"></el-option>
+                  <el-option label="离线" :value="0"></el-option>
+                  <el-option label="在线" :value="1"></el-option>
                 </el-select>
               </div>
             </el-col>
@@ -57,7 +74,7 @@ deviceStore.getDeviceList()
             </el-col>
             <el-col :xl="4" :lg="10">
               <div>
-                <el-button type="primary" icon="Search">搜索</el-button>
+                <el-button type="primary" icon="Search" @click="searchDevice">搜索</el-button>
                 <el-button icon="refresh">重置</el-button>
               </div>
             </el-col>
@@ -72,8 +89,8 @@ deviceStore.getDeviceList()
     <!-- 主体区域 -->
     <el-card style="margin-top: 10px">
       <el-row :gutter="20">
-        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24" v-for="item in deviceStore.deviceData.deviceList"
-          :key="item.code">
+        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24"
+          v-for="(item, index) in deviceStore.deviceData.deviceList" :key="item.code">
           <el-card body-style="height:230px" style="margin-bottom: 20px; border-radius: 20px" shadow="hover">
             <div class="header_title">
               <div class="left_title">
@@ -103,7 +120,8 @@ deviceStore.getDeviceList()
                 </div>
               </div>
               <div class="right_body">
-                <img src="./images/dev01.png" alt="" />
+                <el-image style="width: 100px; height: 100px" :src="getPicture(index % 4)" :zoom-rate="1.2" :max-scale="7"
+                  :min-scale="0.2" :preview-src-list="[getPicture(index % 4)]" :initial-index="4" fit="cover" />
               </div>
             </div>
             <div class="footer_operation">

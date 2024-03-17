@@ -12,7 +12,8 @@
             "productName": "★视频监控产品",
             "img": "",
             "activationTime": "2024-01-17",
-            "qrCode": ""
+            "qrCode": "",
+            "isWifiActive":1
         }
     ],
     "msg": "成功"

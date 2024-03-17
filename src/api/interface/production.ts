@@ -1,9 +1,17 @@
 export interface productionInfo {
+    id:string;
     title:string;
     cate:string;
-    code:string;
-    productionName:string;
-    activeTime:string;
+    type:string;
+    networkingMethods:string;
+    isAuthorization:number;
     img:string;
-    isPublic:number
+    state:number
+}
+
+
+export interface searchProdParams {
+    prodName:string
+    cateName:string
+    state:number
 }

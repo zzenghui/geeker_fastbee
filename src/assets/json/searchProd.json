@@ -1,0 +1,46 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "1",
+            "title": "智能开关产品",
+            "cate": "电工照明",
+            "type": "网关设备",
+            "networkingMethods": "WIFI",
+            "isAuthorization": 1,
+            "img": "",
+            "state": 1
+        },
+        {
+            "id": "1",
+            "title": "智能开关产品",
+            "cate": "电工照明",
+            "type": "网关设备",
+            "networkingMethods": "WIFI",
+            "isAuthorization": 1,
+            "img": "",
+            "state": 1
+        },
+        {
+            "id": "1",
+            "title": "智能开关产品",
+            "cate": "电工照明",
+            "type": "网关设备",
+            "networkingMethods": "WIFI",
+            "isAuthorization": 1,
+            "img": "",
+            "state": 1
+        },
+        {
+            "id": "1",
+            "title": "智能开关产品",
+            "cate": "电工照明",
+            "type": "网关设备",
+            "networkingMethods": "WIFI",
+            "isAuthorization": 1,
+            "img": "",
+            "state": 1
+        }
+    ],
+    "msg": "成功"
+}
