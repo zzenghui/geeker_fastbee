@@ -12,7 +12,7 @@
 				</div>
 				<div class="visualizing-container-head-center">
 					<div class="visualizing-container-head-center-box">
-						<div class="visualizing-container-head-center-maintitle">深圳市xxx软件科技有限公司</div>
+						<div class="visualizing-container-head-center-maintitle">数字工厂</div>
 						<div class="visualizing-container-head-center-subtitle">旅游经济</div>
 					</div>
 				</div>
