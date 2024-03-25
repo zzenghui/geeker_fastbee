@@ -1,0 +1,19 @@
+.topOper {
+  display: flex;
+  justify-content: space-between;
+
+  .leftSearch {
+    width: 1300px;
+
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.el-pagination {
+  margin-top: 20px;
+}

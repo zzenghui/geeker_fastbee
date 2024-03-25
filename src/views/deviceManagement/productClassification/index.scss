@@ -1,0 +1,21 @@
+.topOper {
+  display: flex;
+  justify-content: space-between;
+
+  .leftSearch {
+    display: flex;
+
+    .selectItem {
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.el-pagination {
+  margin-top: 20px;
+}

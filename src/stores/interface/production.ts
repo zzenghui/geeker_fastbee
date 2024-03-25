@@ -1,7 +1,7 @@
-import {productionInfo} from "@/api/interface/production"
+import { productionInfo } from "@/api/interface/production";
 
 export interface productionData {
-    page:number;
-    size:number;
-    productionList:productionInfo[]
+  page: number;
+  size: number;
+  productionList: productionInfo[];
 }

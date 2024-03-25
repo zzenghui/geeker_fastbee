@@ -79,11 +79,10 @@ type ObjToKeyValArray<T> = {
   [K in keyof T]: [K, T[K]];
 }[keyof T];
 
-
 // 声明文件，定义全局变量
 /* eslint-disable */
 declare interface Window {
-	nextLoading: boolean;
-	BMAP_SATELLITE_MAP: any;
-	BMap: any;
+  nextLoading: boolean;
+  BMAP_SATELLITE_MAP: any;
+  BMap: any;
 }

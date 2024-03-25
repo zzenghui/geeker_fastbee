@@ -1,45 +1,36 @@
 {
-    "code": 200,
-    "data": [
-        {
-            "title": "演示监控",
-            "state": 1,
-            "tags": [
-                "GB28181",
-                "MQTT"
-            ],
-            "code": "11010200001320000001",
-            "productName": "★视频监控产品",
-            "img": "",
-            "activationTime": "2024-01-17",
-            "qrCode": ""
-        },
-        {
-            "title": "演示监控",
-            "state": 0,
-            "tags": [
-                "GB28181",
-                "MQTT"
-            ],
-            "code": "11010200001320000003",
-            "productName": "★视频监控产品",
-            "img": "",
-            "activationTime": "2024-01-17",
-            "qrCode": ""
-        },
-        {
-            "title": "演示监控",
-            "state": 1,
-            "tags": [
-                "GB28181",
-                "MQTT"
-            ],
-            "code": "11010200001320000002",
-            "productName": "★视频监控产品",
-            "img": "",
-            "activationTime": "2024-01-17",
-            "qrCode": ""
-        }
-    ],
-    "msg": "成功"
+  "code": 200,
+  "data": [
+    {
+      "title": "演示监控",
+      "state": 1,
+      "tags": ["GB28181", "MQTT"],
+      "code": "11010200001320000001",
+      "productName": "★视频监控产品",
+      "img": "",
+      "activationTime": "2024-01-17",
+      "qrCode": ""
+    },
+    {
+      "title": "演示监控",
+      "state": 0,
+      "tags": ["GB28181", "MQTT"],
+      "code": "11010200001320000003",
+      "productName": "★视频监控产品",
+      "img": "",
+      "activationTime": "2024-01-17",
+      "qrCode": ""
+    },
+    {
+      "title": "演示监控",
+      "state": 1,
+      "tags": ["GB28181", "MQTT"],
+      "code": "11010200001320000002",
+      "productName": "★视频监控产品",
+      "img": "",
+      "activationTime": "2024-01-17",
+      "qrCode": ""
+    }
+  ],
+  "msg": "成功"
 }

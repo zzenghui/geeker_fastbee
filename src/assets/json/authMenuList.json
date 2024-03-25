@@ -58,6 +58,21 @@
           }
         },
         {
+          "path": "/deviceManagement/productManagement-add",
+          "name": "productManagement-add",
+          "component": "/deviceManagement/prodAddCategory/index",
+          "meta": {
+            "icon": "Message",
+            "title": "添加产品",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true,
+            "activeMenu": "/deviceManagement/productManagement"
+          }
+        },
+        {
           "path": "/deviceManagement/productManagement",
           "name": "productManagement",
           "component": "/deviceManagement/productManagement/index",
@@ -92,6 +107,20 @@
           "meta": {
             "icon": "DataLine",
             "title": "设备管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/deviceManagement/protocolManagement",
+          "name": "deviceManagement",
+          "component": "/deviceManagement/protocolManagement/index",
+          "meta": {
+            "icon": "Finished",
+            "title": "协议管理",
             "isLink": "",
             "isHide": false,
             "isFull": false,

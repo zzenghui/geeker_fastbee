@@ -364,13 +364,13 @@ let mapData = [
 
 //左一数据大屏格式
 var Sdata = [
-  { value: 12, name: '设备总数' },
-  { value: 12, name: '在线设备' },
-  { value: 9, name: '离线设备' },
-  { value: 99, name: '告警数量' }
-]
+  { value: 12, name: "设备总数" },
+  { value: 12, name: "在线设备" },
+  { value: 9, name: "离线设备" },
+  { value: 99, name: "告警数量" }
+];
 //左二数据大屏格式
-var leftTwo = [100, 200, 300, 400, 500]
+var leftTwo = [100, 200, 300, 400, 500];
 
 // 初始化 echarts
 const initCharts = (): void => {

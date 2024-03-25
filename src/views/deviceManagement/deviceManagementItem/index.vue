@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { useDeviceStore } from "@/stores/modules/device"
-import { getPicture } from "@/utils/getRandom"
+import { useDeviceStore } from "@/stores/modules/device";
+import { getPicture } from "@/utils/getRandom";
 import { ref } from "vue";
 let current_page = ref<number>(1);
 let page_size = ref<number>(10);
 //结构device仓库
-const deviceStore = useDeviceStore()
+const deviceStore = useDeviceStore();
 //获取全部设备
-deviceStore.getDeviceList()
-
+deviceStore.getDeviceList();
 
 //------------------------------------------------搜索设备start
 let deviceName = ref<string>("");
@@ -21,14 +20,12 @@ function searchDevice() {
     deviceCode: deviceCode.value,
     deviceState: deviceState.value,
     myGroup: myGroup.value
-  }
+  };
   console.log(reqParams);
 
-  deviceStore.searchDevice(reqParams)
+  deviceStore.searchDevice(reqParams);
 }
 //------------------------------------------------搜索设备end
-
-
 </script>
 
 <template>
@@ -47,7 +44,7 @@ function searchDevice() {
             <el-col :xl="5" :lg="10">
               <div class="deviceCode selectItem">
                 <span>设备编号</span>
-                <el-input v-model="deviceCode" style="width: 150px" placeholder="请输入设备名称"></el-input>
+                <el-input v-model="deviceCode" style="width: 150px" placeholder="请输入设备编号"></el-input>
               </div>
             </el-col>
             <el-col :xl="5" :lg="10">
@@ -89,14 +86,22 @@ function searchDevice() {
     <!-- 主体区域 -->
     <el-card style="margin-top: 10px">
       <el-row :gutter="20">
-        <el-col :span="24" :xl="6" :lg="8" :md="12" :sm="24" :xs="24"
-          v-for="(item, index) in deviceStore.deviceData.deviceList" :key="item.code">
+        <el-col
+          :span="24"
+          :xl="6"
+          :lg="8"
+          :md="12"
+          :sm="24"
+          :xs="24"
+          v-for="(item, index) in deviceStore.deviceData.deviceList"
+          :key="item.code"
+        >
           <el-card body-style="height:230px" style="margin-bottom: 20px; border-radius: 20px" shadow="hover">
             <div class="header_title">
               <div class="left_title">
                 <el-icon>
-                  <Menu />
-                </el-icon>&nbsp;
+                  <Menu /> </el-icon
+                >&nbsp;
                 <h3>{{ item.title }}</h3>
               </div>
               <div class="right_title">
@@ -120,8 +125,16 @@ function searchDevice() {
                 </div>
               </div>
               <div class="right_body">
-                <el-image style="width: 100px; height: 100px" :src="getPicture(index % 4)" :zoom-rate="1.2" :max-scale="7"
-                  :min-scale="0.2" :preview-src-list="[getPicture(index % 4)]" :initial-index="4" fit="cover" />
+                <el-image
+                  style="width: 100px; height: 100px"
+                  :src="getPicture(index % 4)"
+                  :zoom-rate="1.2"
+                  :max-scale="7"
+                  :min-scale="0.2"
+                  :preview-src-list="[getPicture(index % 4)]"
+                  :initial-index="4"
+                  fit="cover"
+                />
               </div>
             </div>
             <div class="footer_operation">
@@ -132,8 +145,14 @@ function searchDevice() {
         </el-col>
       </el-row>
       <!-- 分页区域 -->
-      <el-pagination v-model:current-page="current_page" v-model:page-size="page_size" :page-sizes="[10, 15, 20, 25]"
-        :background="true" layout="total, sizes, prev, pager, next, jumper" :total="deviceStore.deviceData.total" />
+      <el-pagination
+        v-model:current-page="current_page"
+        v-model:page-size="page_size"
+        :page-sizes="[10, 15, 20, 25]"
+        :background="true"
+        layout="total, sizes, prev, pager, next, jumper"
+        :total="deviceStore.deviceData.total"
+      />
     </el-card>
   </div>
 </template>

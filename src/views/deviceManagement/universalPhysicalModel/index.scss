@@ -1,0 +1,26 @@
+.topOper {
+  display: flex;
+  justify-content: space-between;
+
+  .leftSearch {
+    width: 1000px;
+
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.sd {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.el-pagination {
+  margin-top: 20px;
+}

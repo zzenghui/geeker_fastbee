@@ -14,42 +14,42 @@ const initChart = (dataArr: number[]): ECharts => {
   const charEch: ECharts = init(charEle);
   const option = {
     tooltip: {
-      trigger: 'axis',
+      trigger: "axis",
       axisPointer: {
-        type: 'shadow'
+        type: "shadow"
       }
     },
     grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
+      left: "3%",
+      right: "4%",
+      bottom: "3%",
       containLabel: true
     },
     xAxis: {
-      type: 'value',
+      type: "value",
       axisLine: {
         show: true,
         textStyle: {
-          color: "#fff",
+          color: "#fff"
         },
         lineStyle: {
-          color: "#fff", //刻度线的颜色
-        },
-      },
+          color: "#fff" //刻度线的颜色
+        }
+      }
     },
     yAxis: {
-      type: 'category',
-      data: ['保留消息', '路由数量', '订阅数量', '会话数量', '连接数量'],
+      type: "category",
+      data: ["保留消息", "路由数量", "订阅数量", "会话数量", "连接数量"],
       axisLabel: {
         show: true,
         textStyle: {
-          color: '#fff',
-        },
-      },
+          color: "#fff"
+        }
+      }
     },
     series: [
       {
-        type: 'bar',
+        type: "bar",
         data: [100, 200, 300, 400, 500],
         color: "#ff0"
       }
